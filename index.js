@@ -28,7 +28,7 @@ controls.update();
 
 // 3. Background
 const textureLoader = new THREE.TextureLoader();
-const backgroundTexture = textureLoader.load("./textures/overcast_soil_puresky.webp");
+const backgroundTexture = textureLoader.load("https://drive.google.com/file/d/13CMo8p16oVpDgFRzOyRRtQhOtqjfuyWO/view?usp=drive_link");
 const backgroundGeometry = new THREE.SphereGeometry(500, 60, 40);
 backgroundGeometry.scale(-1, 1, 1);
 const backgroundMaterial = new THREE.MeshBasicMaterial({ map: backgroundTexture });
