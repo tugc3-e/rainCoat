@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>worms</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Center the text and make it large and visible */
+    .click-text {
+      position: absolute;
+      top: 70%;      /* Vertically center */
+      left: 50%;     /* Horizontally center */
+      transform: translate(-50%, -50%); /* Correct for centering */
+      font-size: 20px;
+      color: white;  /* Text color */
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Shadow for better visibility */
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.161/build/three.module.js",
+        "jsm/": "https://cdn.jsdelivr.net/npm/three@0.161/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Click text in the center -->
+  <div class="click-text">CLICK</div>
+
+  <script type="module" src="worms.js"></script>
+</body>
+</html>
